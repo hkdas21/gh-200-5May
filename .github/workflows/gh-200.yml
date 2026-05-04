@@ -8,3 +8,9 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello from GH-200 Sesion! Lets create some great Workflow files"
+
+      - name: Checkout repo
+        uses: actions/checkout@v6
+
+      - name: List files
+        run: ls -la
